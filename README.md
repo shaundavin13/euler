@@ -1,5 +1,7 @@
 ### Solutions to first 100 Project Euler problems.
 
+_Note: This project is incomplete_
+
 Problems can be found [here](https://projecteuler.net)
 
 I understand that Project Euler does not like people sharing their solutions, so I will only share the first hundred solutions.
