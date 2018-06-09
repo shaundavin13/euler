@@ -1,6 +1,6 @@
 ### Solutions to first 100 Project Euler problems.
 
-_Note: This project is incomplete_
+_Note: This repo is incomplete_
 
 Problems can be found [here](https://projecteuler.net)
 
