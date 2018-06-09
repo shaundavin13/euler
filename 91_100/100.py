@@ -10,9 +10,9 @@ By finding the first arrangement to contain over 10^12 = 1,000,000,000,000 discs
 import math
 
 
-def find_arrangement(max):
+def find_arrangement(max_total_balls):
     blue, total = 3, 4
-    while total < max:
+    while total < max_total_balls:
         red = (blue + total - 1)
         blue = math.ceil(red / (2 ** 0.5 - 1))  # I honestly don't know why this works but I noticed a pattern
         total = blue + red
