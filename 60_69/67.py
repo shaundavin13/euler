@@ -27,7 +27,7 @@ def find_max_path_sum(triangle):
         for index, item in enumerate(row):
             effective_row_values.append(item + max(previous_row[index], previous_row[index + 1]))
         previous_row = effective_row_values
-    return previous_row
+    return previous_row[0]
 
 
 with open(os.path.join('data', '67.txt'), 'r') as f:
