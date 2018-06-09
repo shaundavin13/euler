@@ -14,7 +14,8 @@ def find_arrangement(max_total_balls):
     blue, total = 3, 4
     while total < max_total_balls:
         red = (blue + total - 1)
-        blue = math.ceil(red / (2 ** 0.5 - 1))  # I honestly don't know why this works but I noticed a pattern
+        # If you know red, solve for blue from total(total - 1) / blue(blue - 1) = 2 where total = blue + red
+        blue = math.sqrt(red ** 2 - red + (((2 * red + 1) / 2) ** 2)) + ((2 * red + 1) / 2)
         total = blue + red
 
     return blue
